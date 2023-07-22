@@ -1,0 +1,29 @@
+body{background: #F5EFE7; display: flex; justify-content: center; align-items: center; width: 100%; height: 100vh; height: 100dvh;}
+
+.Contenedor{background: #D8C4B6; width: 400px; height: 500px; border-radius: 20px; background: #D8C4B6; box-shadow:  -11px 11px 21px #af9f93, 11px -11px 21px #ffe9d9; padding: 20px;}
+.Contenedor__pantalla{background: #000; border-radius: 10px; color: #fff; font-family: 'Press Start 2P', cursive; width: 100%; margin: 15px 0px; }
+.Contenedor__pantalla p{padding: 10px; overflow: hidden; font-size: 25px;}
+
+.Contenedor__pantalla__setValores__cursor{animation: cursorParpadeo 1s infinite ease-out;}
+
+
+.Contenedor__teclado{display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(5, 1fr); grid-column-gap: 20px; grid-row-gap: 20px; width: 100%; height: 390px;}
+.Contenedor__teclado__button{font-family: 'Press Start 2P', cursive; border-radius: 50%; background: #4F709C; color: #213555; border: 0px solid transparent; border: 5px solid #4F709C; font-weight: bold;}
+.Contenedor__teclado__button:hover{border: 5px solid #213555;}
+
+
+
+
+
+/*
+clarito: #F5EFE7
+- claro: #D8C4B6
+-  azul: #4F709C
+   Azul: #213555
+   font-family: 'Press Start 2P', cursive;
+*/
+
+@keyframes cursorParpadeo {
+    0%{color: #fff;}
+    100%{color: #000;}
+}
