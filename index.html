@@ -5,42 +5,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="normalize.css">
-
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-
-        <title>Document</title>
+        <link rel="icon" href="https://drive.google.com/uc?export=view&id=18v3-YRDOIMdHzTmmZ_s2ngQpQ4DbttKY" />
+        <title>Calculadora</title>
     </head>
     <body>
         <div class="Contenedor">
             <div class="Contenedor__pantalla">
                 <p class="Contenedor__pantalla__setValores">
-                    <b class="Contenedor__pantalla__setValores__cursor">_</b>
+                    
                 </p>
+                <b class="Contenedor__pantalla__cursor">_</b>
             </div>
             <div class="Contenedor__teclado">
-                <button class="Contenedor__teclado__button" onclick="">1</button>
-                <button class="Contenedor__teclado__button" onclick="">2</button>
-                <button class="Contenedor__teclado__button" onclick="">3</button>
-                <button class="Contenedor__teclado__button" onclick="">4</button>
-                <button class="Contenedor__teclado__button" onclick="">5</button>
-                <button class="Contenedor__teclado__button" onclick="">6</button>
-                <button class="Contenedor__teclado__button" onclick="">7</button>
-                <button class="Contenedor__teclado__button" onclick="">8</button>
-                <button class="Contenedor__teclado__button" onclick="">9</button>
-                <button class="Contenedor__teclado__button" onclick="">0</button>
-                <button class="Contenedor__teclado__button" onclick="">.</button>
-                <button class="Contenedor__teclado__button" onclick="">=</button>
-                <button class="Contenedor__teclado__button" onclick="">+</button>
-                <button class="Contenedor__teclado__button" onclick="">-</button>
-                <button class="Contenedor__teclado__button" onclick="">x</button>
-                <button class="Contenedor__teclado__button" onclick="">÷</button>
-                <button class="Contenedor__teclado__button" onclick="">AC</button>
-                <button class="Contenedor__teclado__button" onclick="">R</button>
-                <button class="Contenedor__teclado__button" onclick="">DEL</button>
-                <button class="Contenedor__teclado__button" onclick="">%</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`c`)">C</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`abs`)">abs</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`√`)">√²</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`**`)">^</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`1`)">1</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`2`)">2</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`3`)">3</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`/`)">÷</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`4`)">4</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`5`)">5</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`6`)">6</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`*`)">x</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`7`)">7</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`8`)">8</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`9`)">9</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`-`)">-</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`.`)">.</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`0`)">0</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`=`)">=</button>
+                <button class="Contenedor__teclado__button" onclick="getBoton(`+`)">+</button>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
